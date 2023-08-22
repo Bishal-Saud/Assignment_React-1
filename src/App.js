@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Button from "./Button";
+import Header from "./Header";
+import Person from "./Person";
+import List from "./List";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ <>
+ {/* THIRD question solution */}
+<Header title="Welcome to my first react website"/>
+ {/* First question solution  */}
+ <Person name='Bishal' age='19'/>
+ {/* second question solution */}
+ <Button value="Click here 👇"/>
+ {/* Fourth question solution  */}
+ <List items={['Apple','banana','carrot']}/>
+ </>
+  )
 }
 
 export default App;
